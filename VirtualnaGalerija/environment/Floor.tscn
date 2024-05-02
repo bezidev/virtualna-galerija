@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="CubeMesh" id=4]
+
+[sub_resource type="BoxShape" id=3]
+
+[node name="Floor" type="StaticBody"]
+transform = Transform( 64, 0, 0, 0, 1, 0, 0, 0, 64, 0, -2.0364, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Mesh" type="MeshInstance" parent="."]
+mesh = SubResource( 4 )
+skeleton = NodePath("../..")
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 64, 0, 0, 0, 1, 0, 0, 0, 64, 0, 0, 0 )
+shape = SubResource( 3 )

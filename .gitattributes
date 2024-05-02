@@ -1,0 +1,6 @@
+VirtualnaGalerija/images/arearea/image.material filter=lfs diff=lfs merge=lfs -text
+VirtualnaGalerija/images/madona/image.material filter=lfs diff=lfs merge=lfs -text
+VirtualnaGalerija/images/arearea/arearea.glb filter=lfs diff=lfs merge=lfs -text
+VirtualnaGalerija/images/avignonske[[:space:]]gospodicne/image.material filter=lfs diff=lfs merge=lfs -text
+VirtualnaGalerija/images/impresija/image.material filter=lfs diff=lfs merge=lfs -text
+VirtualnaGalerija/images/svoboda[[:space:]]vodi[[:space:]]ljudstvo/image.material filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,1353 @@
+[gd_scene load_steps=136 format=2]
+
+[ext_resource path="res://FPSCounter.gd" type="Script" id=1]
+[ext_resource path="res://images/apostoli/Apostoli_in_Donator.glb" type="PackedScene" id=2]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://environment/Wall.tscn" type="PackedScene" id=4]
+[ext_resource path="res://environment/Floor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ttf/JetBrainsMono-Bold.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://images/arnolfini/Giovanni_Arnolfini_s_soprogo.glb" type="PackedScene" id=7]
+[ext_resource path="res://images/assunta/Assunta.glb" type="PackedScene" id=8]
+[ext_resource path="res://images/madona/Madona_v_zelenju.glb" type="PackedScene" id=9]
+[ext_resource path="res://images/ugrabitev evrope/Ugrabitev Evrope.glb" type="PackedScene" id=10]
+[ext_resource path="res://images/strahote vojne/strahote vojne.glb" type="PackedScene" id=11]
+[ext_resource path="res://images/predaja brede/predaja brede.glb" type="PackedScene" id=12]
+[ext_resource path="res://images/salomonova sodba/salomonova sodba.glb" type="PackedScene" id=13]
+[ext_resource path="res://images/prisega horacijev/prisega horacijev.glb" type="PackedScene" id=14]
+[ext_resource path="res://images/napoleon/napoleon.glb" type="PackedScene" id=15]
+[ext_resource path="res://images/amor in psihe/amor in psihe.glb" type="PackedScene" id=16]
+[ext_resource path="res://images/splav meduze/splav meduze.glb" type="PackedScene" id=17]
+[ext_resource path="res://images/svoboda vodi ljudstvo/svoboda vodi ljudstvo.glb" type="PackedScene" id=18]
+[ext_resource path="res://images/sardanapalova smrt/sardanapalova smrt.glb" type="PackedScene" id=19]
+[ext_resource path="res://images/alzirke/alzirke.glb" type="PackedScene" id=20]
+[ext_resource path="res://images/klansko jezero/klansko jezero.glb" type="PackedScene" id=21]
+[ext_resource path="res://images/pogreb v ornansu/pogreb v ornansu.glb" type="PackedScene" id=22]
+[ext_resource path="res://images/umetnikov atelje/umetnikov atelje.glb" type="PackedScene" id=23]
+[ext_resource path="res://images/zene klase/zene klase.glb" type="PackedScene" id=24]
+[ext_resource path="res://images/doma/doma.glb" type="PackedScene" id=25]
+[ext_resource path="res://images/pred lovom/pred lovom.glb" type="PackedScene" id=26]
+[ext_resource path="res://images/branjevka/branjevka.glb" type="PackedScene" id=27]
+[ext_resource path="res://images/impresija/impresija.glb" type="PackedScene" id=28]
+[ext_resource path="res://images/le moulin/le moulin.glb" type="PackedScene" id=29]
+[ext_resource path="res://images/baletna sola/baletna sola.glb" type="PackedScene" id=30]
+[ext_resource path="res://images/14letna plesalka/14letna plesalka.glb" type="PackedScene" id=31]
+[ext_resource path="res://images/pomlad/pomlad.glb" type="PackedScene" id=32]
+[ext_resource path="res://images/sava/sava.glb" type="PackedScene" id=33]
+[ext_resource path="res://images/zvezdna noc/zvezdna noc.glb" type="PackedScene" id=34]
+[ext_resource path="res://images/pere tanguy/pere tanguy.glb" type="PackedScene" id=35]
+[ext_resource path="res://images/rumeni kristus/rumeni kristus.glb" type="PackedScene" id=36]
+[ext_resource path="res://images/arearea/arearea.glb" type="PackedScene" id=37]
+[ext_resource path="res://images/avtoportret/avtoportret.glb" type="PackedScene" id=38]
+[ext_resource path="res://images/tihozitje/tihozitje.glb" type="PackedScene" id=39]
+[ext_resource path="res://images/avtoportret z modelom/avtoportret z modelom.glb" type="PackedScene" id=40]
+[ext_resource path="res://images/ples okrog zlatega teleta/ples okrog zlteleta.glb" type="PackedScene" id=41]
+[ext_resource path="res://images/apostoli/Apostoli_in_Donator.gd" type="Script" id=42]
+[ext_resource path="res://environment/RichTextLabel.gd" type="Script" id=43]
+[ext_resource path="res://images/zelena crta/zelena crta.glb" type="PackedScene" id=44]
+[ext_resource path="res://images/stanje duha/stanje duha.glb" type="PackedScene" id=45]
+[ext_resource path="res://images/ples/ples.glb" type="PackedScene" id=46]
+[ext_resource path="res://images/pes na vrvici/pes na vrvici.glb" type="PackedScene" id=47]
+[ext_resource path="res://images/nadaljevanja v prostoru/nadaljevanja v prostoru.glb" type="PackedScene" id=48]
+[ext_resource path="res://images/tihozitje z violino/tihozitje z violino.glb" type="PackedScene" id=49]
+[ext_resource path="res://images/avignonske gospodicne/avignonske gdc.glb" type="PackedScene" id=50]
+[ext_resource path="res://images/fontana/duchampfontana1.obj" type="ArrayMesh" id=51]
+[ext_resource path="res://images/fontana/fontana.glb" type="PackedScene" id=52]
+[ext_resource path="res://images/vztrajnost spomina/vztrajnost spomina.glb" type="PackedScene" id=53]
+[ext_resource path="res://images/uganka pozelenja/uganka pozelenja.glb" type="PackedScene" id=54]
+[ext_resource path="res://images/abstrahiranje drevesa/abstrahiranje drevesa.glb" type="PackedScene" id=55]
+[ext_resource path="res://images/broadway boogie woogie/broadway boogie woogie.glb" type="PackedScene" id=56]
+[ext_resource path="res://images/kompozicija modra/kompozicija modra.glb" type="PackedScene" id=57]
+[ext_resource path="res://images/belo na belem/belo na belem.glb" type="PackedScene" id=58]
+[ext_resource path="res://images/belo na belem slika/belo na belem slika.glb" type="PackedScene" id=59]
+[ext_resource path="res://images/kompozicija 4/kompozicija 4.glb" type="PackedScene" id=60]
+[ext_resource path="res://images/s tremi jezdeci/s tremi jezdeci.glb" type="PackedScene" id=61]
+[ext_resource path="res://images/jesenski ritmi/jesenski ritmi.glb" type="PackedScene" id=62]
+[ext_resource path="res://the clock/CHRISTIAN MARCLAY's THE CLOCK [28702716].webm" type="VideoStream" id=63]
+[ext_resource path="res://environment/VideoPlayer.gd" type="Script" id=64]
+[ext_resource path="res://images/stol/stol.glb" type="PackedScene" id=65]
+[ext_resource path="res://images/polka dot/polka dot.glb" type="PackedScene" id=66]
+[ext_resource path="res://images/obliteration room/obliteration room.glb" type="PackedScene" id=67]
+[ext_resource path="res://images/kapital/kapital.glb" type="PackedScene" id=68]
+[ext_resource path="res://images/nepospravljiva postelja/nepospravljiva postelja.glb" type="PackedScene" id=69]
+[ext_resource path="res://images/hoja po kitajskem zidu/hoja po kitajskem zidu.glb" type="PackedScene" id=70]
+[ext_resource path="res://images/mrtvi zajec/mrtvi zajec.glb" type="PackedScene" id=71]
+[ext_resource path="res://images/crni kvadrat na rdecem trgu/crni kvadrat na rdecem trgu.glb" type="PackedScene" id=72]
+[ext_resource path="res://images/brez naslova/brez naslova.glb" type="PackedScene" id=73]
+[ext_resource path="res://images/follow your dreams/follow your dreams.glb" type="PackedScene" id=74]
+[ext_resource path="res://images/i shop therefore i am/i shop therefore i am.glb" type="PackedScene" id=75]
+[ext_resource path="res://images/kraljestvo oceta/kraljestvo oceta.glb" type="PackedScene" id=76]
+[ext_resource path="res://images/jackson in bubbles/jackson in bubbles.glb" type="PackedScene" id=77]
+[ext_resource path="res://environment/Container.gd" type="Script" id=78]
+
+[sub_resource type="DynamicFontData" id=22]
+font_path = "res://ttf/JetBrainsMono-Medium.ttf"
+
+[sub_resource type="DynamicFont" id=23]
+font_data = SubResource( 22 )
+
+[sub_resource type="DynamicFontData" id=24]
+font_path = "res://ttf/JetBrainsMono-BoldItalic.ttf"
+
+[sub_resource type="DynamicFont" id=25]
+font_data = SubResource( 24 )
+
+[sub_resource type="DynamicFontData" id=26]
+font_path = "res://ttf/JetBrainsMono-Italic.ttf"
+
+[sub_resource type="DynamicFont" id=27]
+font_data = SubResource( 26 )
+
+[sub_resource type="DynamicFontData" id=28]
+font_path = "res://ttf/JetBrainsMono-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=29]
+font_data = SubResource( 28 )
+
+[sub_resource type="DynamicFontData" id=30]
+font_path = "res://ttf/JetBrainsMono-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=31]
+font_data = SubResource( 30 )
+
+[sub_resource type="BoxShape" id=32]
+
+[sub_resource type="DynamicFont" id=2]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="TextMesh" id=1]
+text = "Gotika"
+font = SubResource( 2 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="TextMesh" id=4]
+text = "Renesansa"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=5]
+text = "Barok"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=6]
+text = "Neoklasicizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=7]
+text = "Romantika"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=8]
+text = "Realizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=9]
+text = "Impresionizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=10]
+text = "Postimpresionizem"
+font = SubResource( 2 )
+
+[sub_resource type="DynamicFontData" id=14]
+font_path = "res://ttf/JetBrainsMono-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 10
+font_data = SubResource( 14 )
+
+[sub_resource type="TextMesh" id=13]
+text = "Postimpresionizem"
+font = SubResource( 12 )
+
+[sub_resource type="DynamicFontData" id=15]
+font_path = "res://ttf/JetBrainsMono-Light.ttf"
+
+[sub_resource type="DynamicFont" id=16]
+size = 7
+font_data = SubResource( 15 )
+
+[sub_resource type="TextMesh" id=17]
+text = "se nadaljuje"
+font = SubResource( 16 )
+
+[sub_resource type="TextMesh" id=18]
+text = "Ekspresionizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=33]
+text = "Fauvizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=34]
+text = "Futurizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=35]
+text = "Kubizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=36]
+text = "Dadaizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=40]
+text = "Nadrealizem ali surrealizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=41]
+text = "MODERNIZEM"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=42]
+text = "Abstraktna umetnost"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=43]
+text = "Abstraktni ekspresionizem"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=44]
+text = "SODOBNA UMETNOST"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=45]
+text = "Video"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=46]
+text = "Konceptualna umetnost"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=47]
+text = "Instalacija"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=48]
+text = "Performans"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=49]
+text = "Street Art"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=50]
+text = "Fotografija"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=51]
+text = "Fotomontaža"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=52]
+text = "Objekti"
+font = SubResource( 2 )
+
+[sub_resource type="TextMesh" id=58]
+text = "Drip painting"
+font = SubResource( 2 )
+
+[sub_resource type="DynamicFontData" id=59]
+font_path = "res://ttf/JetBrainsMono-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=60]
+font_data = SubResource( 59 )
+
+[sub_resource type="TextMesh" id=61]
+text = "Kako dober Jackson Pollock ste?"
+font = SubResource( 60 )
+
+[sub_resource type="ViewportTexture" id=37]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="SpatialMaterial" id=38]
+resource_local_to_scene = true
+albedo_texture = SubResource( 37 )
+
+[sub_resource type="PlaneMesh" id=39]
+resource_local_to_scene = true
+material = SubResource( 38 )
+
+[sub_resource type="ViewportTexture" id=53]
+viewport_path = NodePath("Viewport2")
+
+[sub_resource type="SpatialMaterial" id=54]
+resource_local_to_scene = true
+albedo_texture = SubResource( 53 )
+
+[sub_resource type="PlaneMesh" id=55]
+resource_local_to_scene = true
+material = SubResource( 54 )
+size = Vector2( 6, 6 )
+
+[sub_resource type="SpatialMaterial" id=56]
+albedo_color = Color( 0.65098, 0.6, 0.6, 1 )
+
+[sub_resource type="CubeMesh" id=57]
+material = SubResource( 56 )
+size = Vector3( 6, 0.5, 6 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="FPSCounter" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 40.0
+margin_bottom = 14.0
+text = "FPS: 0"
+script = ExtResource( 1 )
+
+[node name="Help" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 20.0
+margin_right = 106.0
+margin_bottom = 38.0
+text = "WASD = Move"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 43.0
+margin_right = 500.0
+margin_bottom = 343.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/mono_font = SubResource( 23 )
+custom_fonts/bold_italics_font = SubResource( 25 )
+custom_fonts/italics_font = SubResource( 27 )
+custom_fonts/bold_font = SubResource( 29 )
+custom_fonts/normal_font = SubResource( 31 )
+bbcode_enabled = true
+script = ExtResource( 43 )
+
+[node name="Floor" parent="." instance=ExtResource( 5 )]
+transform = Transform( 22.4805, 0, 0, 0, 1, 0, 0, 0, 68.6855, 1.38156, -2, 46.3511 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.0121469, -0.00664968, -0.999904, 8.71582e-05, 0.999977, -0.00664911, 0.999926, -6.38385e-06, 0.0121472, -17.8684, -0.812774, -13.83 )
+
+[node name="Wall" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2.26094, 0, 0, 0, 3.48044, 0, 0, 0, 0.162977, 1.1999, 5.98887, -21.9175 )
+
+[node name="Wall2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.972, 0, 0, 0, 3.48, 0, 0, 0, 0.163, 4.36264, 5.98887, 10.7778 )
+
+[node name="Wall3" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.00379568, 0, 0.162977, 0, 3.48044, 0, -6.84285, 0, -0.00098672, 23.6917, 6.02775, 46.1248 )
+
+[node name="Wall4" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.00379568, 0, 0.162977, 0, 3.48044, 0, -6.92074, 0, -0.000997951, -20.541, 6.02775, 46.3792 )
+
+[node name="Wall5" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.97241, 0, 0, 0, 3.48044, 0, 0, 0, 0.162977, 4.35234, 5.98887, -5.93594 )
+
+[node name="Wall6" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.972, 0, 0, 0, 3.48, 0, 0, 0, 0.163, 4.36869, 5.98887, 28.4904 )
+
+[node name="Wall8" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.972, 0, 0, 0, 3.48, 0, 0, 0, 0.163, 4.36869, 5.98887, 44.521 )
+
+[node name="Wall9" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.972, 0, 0, 0, 3.48, 0, 0, 0, 0.163, 4.36869, 5.98887, 61.1257 )
+
+[node name="Wall10" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.972, 0, 0, 0, 3.48, 0, 0, 0, 0.163, 4.36869, 5.98887, 77.1954 )
+
+[node name="Wall11" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.972, 0, 0, 0, 3.48, 0, 0, 0, 0.163, 4.36869, 5.98887, 96.5249 )
+
+[node name="Wall7" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2.21318, 0, 0, 0, 3.48044, 0, 0, 0, 0.162977, 1.67304, 5.98887, 114.525 )
+
+[node name="Apostoli_in_Donator" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.264973, 0, 0, 0, -4.37114e-08, -0.264973, 0, 1, -1.15823e-08, -16, 1.2, -21.4992 )
+script = ExtResource( 42 )
+
+[node name="Area" type="Area" parent="Apostoli_in_Donator"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Apostoli_in_Donator/Area"]
+transform = Transform( 5, 0, 0, 0, 5, 1.42109e-14, 0, -2.27374e-13, 3, 0, 1.50309, 4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="Napis Gotika" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -15.992, 2.23177, -21.4959 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 3 )
+
+[node name="Giovanni_Arnolfini_s_soprogo" parent="." instance=ExtResource( 7 )]
+transform = Transform( 5.81493e-16, 1.82212e-08, 0.30433, 0.304338, -1.82212e-08, 0, 1.3303e-08, 0.416852, -1.33027e-08, -10, 1.2, -21.4992 )
+
+[node name="Area" type="Area" parent="Giovanni_Arnolfini_s_soprogo"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Giovanni_Arnolfini_s_soprogo/Area"]
+transform = Transform( 5, 2.27374e-13, -1.69407e-21, 2.84217e-14, 12, 0, 1.69407e-21, 5.68434e-14, 3, 2.38419e-07, 4.1461, 0 )
+shape = SubResource( 32 )
+
+[node name="Assunta" parent="." instance=ExtResource( 8 )]
+transform = Transform( 4.88145e-16, 8.01442e-09, 0.255482, 0.255482, -8.01442e-09, 0, 1.38453e-08, 0.227314, -1.38453e-08, -4, 1.2, -21.4992 )
+
+[node name="Area" type="Area" parent="Assunta"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Assunta/Area"]
+transform = Transform( 5, -1.13687e-13, 1.69407e-21, 5.68434e-14, 20, 2.84217e-14, 1.69407e-21, 1.13687e-13, 3, 4.76837e-07, 11.1408, 0 )
+shape = SubResource( 32 )
+
+[node name="Madona_v_zelenju" parent="." instance=ExtResource( 9 )]
+transform = Transform( -0.22873, 0.0120776, 1.44259e-06, 0, -0.000490508, 0.228748, 0.00294102, 0.999922, 0.000119434, 2, 1.2, -21.4992 )
+
+[node name="Area" type="Area" parent="Madona_v_zelenju"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Madona_v_zelenju/Area"]
+transform = Transform( 6.00082, 0.106805, 4.43726e-05, 0.01552, 4.32272, 0.000840343, 3.32798e-05, 0.00433736, 8, 0.150048, 2.84169, 0.00609064 )
+shape = SubResource( 32 )
+
+[node name="Napis Renesansa" type="MeshInstance" parent="."]
+transform = Transform( 3.62518, 0, 0, 0, 3.89336, 0, 0, 0, 1.70073, -10.0037, 2.89954, -21.4959 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 3 )
+
+[node name="Ugrabitev Evrope" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1.10533e-15, 2.5287e-08, 0.578499, 0.578499, -2.5287e-08, 0, 4.37114e-08, 1, -4.37114e-08, 8, 1.2, -21.4992 )
+
+[node name="Area" type="Area" parent="Ugrabitev Evrope"]
+transform = Transform( 1, 2.51721e-08, -1.10031e-15, 2.51722e-08, 1.57587, -2.51722e-08, -1.10031e-15, -2.51721e-08, 1, 0, 0.115839, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Ugrabitev Evrope/Area"]
+transform = Transform( 5, -1.42109e-14, -4.23516e-22, 0, 2.3, -2.84217e-14, 1.69407e-21, 1.42109e-14, 3, 2.38419e-07, 2.23303, 0 )
+shape = SubResource( 32 )
+
+[node name="strahote vojne" parent="." instance=ExtResource( 11 )]
+transform = Transform( 5.70441e-16, 3.31101e-08, 0.298553, 0.298553, -3.31101e-08, 0, 1.71991e-08, 0.998287, -1.71991e-08, 15, 1.2, -21.4992 )
+
+[node name="Area" type="Area" parent="strahote vojne"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="strahote vojne/Area"]
+transform = Transform( 5, 1.38799e-07, -6.14911e-15, 3.08036e-08, 4.75155, -5.54464e-08, -3.41617e-15, -1.38799e-07, 9.00001, 4.76837e-07, 2.68768, 0 )
+shape = SubResource( 32 )
+
+[node name="predaja brede" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.66502e-08, -0.532169, 3.33004e-08, -0.380913, -2.32618e-08, 0, 1.45561e-15, -4.65237e-08, -0.380913, 23.2, 1.2, -13.6192 )
+
+[node name="Area" type="Area" parent="predaja brede"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="predaja brede/Area"]
+transform = Transform( 5, 1.7053e-13, -1.35525e-20, -2.84217e-14, 5, -2.84217e-14, 6.77626e-21, 1.13687e-13, 7, -2.38419e-07, 4.91755, -9.53674e-07 )
+shape = SubResource( 32 )
+
+[node name="salomonova sodba" parent="." instance=ExtResource( 13 )]
+transform = Transform( 5.58791e-16, -1.27837e-08, 0.292456, -0.292456, -1.27837e-08, 0, 3.17829e-08, -0.727109, -3.17829e-08, 15, 1.2, -6.41259 )
+
+[node name="Area" type="Area" parent="salomonova sodba"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="salomonova sodba/Area"]
+transform = Transform( 5, -7.07332e-08, -8.24492e-15, -1.17888e-07, 4.61818, 1.88621e-07, -5.15307e-15, 7.07332e-08, 8, 0, 4.56302, 0 )
+shape = SubResource( 32 )
+
+[node name="prisega horacijev" parent="." instance=ExtResource( 14 )]
+transform = Transform( 6.70637e-16, 3.17072e-08, -0.350993, 0.350993, -3.17072e-08, 0, -1.20755e-08, -0.570919, -1.20755e-08, 8, 1.2, -6.41259 )
+
+[node name="Area" type="Area" parent="prisega horacijev"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="prisega horacijev/Area"]
+transform = Transform( 5, 1.56999e-07, 4.98102e-15, 4.59493e-08, 5.73795, 5.51389e-08, 4.15085e-15, 1.56999e-07, 6, 4.76837e-07, 5.58605, 0 )
+shape = SubResource( 32 )
+
+[node name="napoleon" parent="." instance=ExtResource( 15 )]
+transform = Transform( 9.4729e-16, -4.81232e-08, 0.495809, -0.495785, -4.81232e-08, 0, 1.97318e-08, -1.00239, -1.97327e-08, 2, 1.2, -6.41259 )
+
+[node name="Area" type="Area" parent="napoleon"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="napoleon/Area"]
+transform = Transform( 5, -8.24225e-08, -2.11636e-15, -3.63376e-08, 3.14915, 2.18036e-08, -3.52692e-15, 8.24185e-08, 3, 9.53674e-07, 3.00971, 0 )
+shape = SubResource( 32 )
+
+[node name="amor in psihe" parent="." instance=ExtResource( 16 )]
+transform = Transform( 1.19799e-15, 5.09383e-08, -0.626996, 0.626996, -5.09383e-08, 0, -2.35185e-08, -1, -2.35185e-08, -4, 1.2, -6.41259 )
+
+[node name="Area" type="Area" parent="amor in psihe"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="amor in psihe/Area"]
+transform = Transform( 5, -6.60025e-08, -1.16419e-15, -2.38836e-08, 3.18758, -1.43299e-08, -1.94035e-15, -6.60025e-08, 3, 3.57628e-07, 3.09272, -4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="Napis Barok" type="MeshInstance" parent="."]
+transform = Transform( 3.62518, 0, 0, 0, 3.89336, 0, 0, 0, 1.70073, 7.88002, 2.89954, -21.5432 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Neoklasicizem" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, 15.0858, 2.89954, -6.30812 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 3 )
+
+[node name="splav meduze" parent="." instance=ExtResource( 17 )]
+transform = Transform( 8.08863e-16, 3.75084e-08, 0.424087, 0.423337, -3.75084e-08, 0, 2.14881e-08, 0.996444, -2.15262e-08, -10, 1.2, -5.51259 )
+
+[node name="Area" type="Area" parent="splav meduze"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="splav meduze/Area"]
+transform = Transform( 4, 1.15943e-07, -5.44505e-15, 4.90774e-08, 3.60859, -6.14554e-08, -4.34065e-15, -1.15738e-07, 5, 4.76837e-07, 3.61249, 0 )
+shape = SubResource( 32 )
+
+[node name="svoboda vodi ljudstvo" parent="." instance=ExtResource( 18 )]
+transform = Transform( 6.13742e-16, 4.20599e-08, 0.321288, 0.321216, -4.20599e-08, 0, 1.45868e-08, 0.999636, -1.45901e-08, -4, 1.2, -5.51259 )
+
+[node name="Area" type="Area" parent="svoboda vodi ljudstvo"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="svoboda vodi ljudstvo/Area"]
+transform = Transform( 5, 1.92637e-07, -7.33468e-15, 4.66691e-08, 3.77119, -5.60157e-08, -6.10945e-15, -1.92594e-07, 6, 0.0231104, 3.54111, 0.120946 )
+shape = SubResource( 32 )
+
+[node name="sardanapalova smrt" parent="." instance=ExtResource( 19 )]
+transform = Transform( -0.315322, 8.06386e-08, 0, 1.20496e-15, 4.03193e-08, 0.315322, 2.98854e-08, 1, -1.49427e-08, 2, 1.2, -5.51259 )
+
+[node name="Area" type="Area" parent="sardanapalova smrt"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="sardanapalova smrt/Area"]
+transform = Transform( 6, 3.58831e-07, -1.16563e-14, 1.09392e-07, 3.70314, -4.55799e-08, -1.39876e-14, -1.79416e-07, 5, 0, 3.67929, 0 )
+shape = SubResource( 32 )
+
+[node name="alzirke" parent="." instance=ExtResource( 20 )]
+transform = Transform( 7.33027e-16, 3.2015e-08, 0.374833, 0.383646, -3.2015e-08, 0, 2.22133e-08, 0.970169, -2.17031e-08, 8, 1.2, -5.51259 )
+
+[node name="Area" type="Area" parent="alzirke"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="alzirke/Area"]
+transform = Transform( 5, 1.28314e-07, -6.86408e-15, 7.65347e-08, 3.83763, -8.22548e-08, -6.53693e-15, -1.31331e-07, 5.5, 2.38419e-07, 3.93694, 0 )
+shape = SubResource( 32 )
+
+[node name="klansko jezero" parent="." instance=ExtResource( 21 )]
+transform = Transform( 0.00229877, 2.16249e-08, 0.497014, 0.497014, -2.17252e-08, -0.00229877, 4.35092e-08, 1, -4.37109e-08, 15, 1.2, -5.51259 )
+
+[node name="Area" type="Area" parent="klansko jezero"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="klansko jezero/Area"]
+transform = Transform( 3, 6.78354e-08, 1.49011e-08, 8.84807e-08, 3.8591, -1.48152e-07, -5.58795e-09, -6.81498e-08, 5, 1.43051e-06, 3.7798, 0 )
+shape = SubResource( 32 )
+
+[node name="Napis Romantika" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -10.0391, 2.89729, -5.52369 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Realizem" type="MeshInstance" parent="."]
+transform = Transform( -1.43301e-07, 0, -2.10094, 0, 3.52088, 0, 3.27835, 0, -9.18349e-08, 23.2727, 2.897, 2.62433 )
+mesh = SubResource( 8 )
+material/0 = SubResource( 3 )
+
+[node name="pogreb v ornansu" parent="." instance=ExtResource( 22 )]
+transform = Transform( 2.0827e-08, -0.999797, -4.16369e-08, -0.476467, -4.37025e-08, 0, -1.82076e-15, 8.74051e-08, -0.476271, 23.2, 1.2, 2.65233 )
+
+[node name="Area" type="Area" parent="pogreb v ornansu"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="pogreb v ornansu/Area"]
+transform = Transform( 5, -1.42109e-14, -8.80914e-21, 2.84217e-14, 2.5, -3.69482e-13, 6.77626e-21, 1.42109e-13, 6.5, 4.76837e-07, 3.1385, -1.90735e-06 )
+shape = SubResource( 32 )
+
+[node name="umetnikov atelje" parent="." instance=ExtResource( 23 )]
+transform = Transform( 9.26267e-16, 2.11905e-08, -0.484783, 0.484783, -2.11905e-08, 0, -4.37114e-08, -1, -4.37114e-08, 15, 1.2, 10.3 )
+
+[node name="Area" type="Area" parent="umetnikov atelje"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="umetnikov atelje/Area"]
+transform = Transform( 4, 5.58035e-08, 6.36324e-15, 9.70492e-08, 3.57663, 1.45574e-07, 4.24216e-15, 5.58035e-08, 6, 4.76837e-06, 3.57444, 0 )
+shape = SubResource( 32 )
+
+[node name="zene klase" parent="." instance=ExtResource( 24 )]
+transform = Transform( 7.51511e-16, 1.71926e-08, -0.39332, 0.39332, -1.71926e-08, 0, -4.37114e-08, -1, -4.37114e-08, 8, 1.2, 10.3 )
+
+[node name="Area" type="Area" parent="zene klase"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="zene klase/Area"]
+transform = Transform( 4.3, 5.15696e-08, 5.88046e-15, 9.64127e-08, 3.47977, 1.34529e-07, 4.21434e-15, 5.15697e-08, 6, 1.43051e-06, 3.29538, 0 )
+shape = SubResource( 32 )
+
+[node name="doma" parent="." instance=ExtResource( 25 )]
+transform = Transform( 1.06141e-15, 2.42822e-08, -0.555511, 0.555511, -2.42822e-08, 0, -4.37114e-08, -1, -4.37114e-08, 2, 1.2, 10.3 )
+
+[node name="Area" type="Area" parent="doma"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="doma/Area"]
+transform = Transform( 3, 4.64601e-08, 3.09041e-15, 6.06e-08, 3.36288, 7.07001e-08, 2.64891e-15, 4.64601e-08, 3.5, 1.66893e-06, 3.22918, 1.43051e-06 )
+shape = SubResource( 32 )
+
+[node name="pred lovom" parent="." instance=ExtResource( 26 )]
+transform = Transform( 0.345593, 0, 0, 0, -3.59349e-08, 0.375391, 0, -0.984475, -1.965e-08, -4, 1.2, 10.3 )
+
+[node name="Area" type="Area" parent="pred lovom"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="pred lovom/Area"]
+transform = Transform( 4, -9.71743e-15, 1.45645e-22, 3.20774e-14, 3.24479, 4.09954e-08, 8.94089e-22, 9.04416e-08, 5, 9.53674e-07, 3.14623, -4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="branjevka" parent="." instance=ExtResource( 27 )]
+transform = Transform( 0.405615, 0, 0, 0, -1.773e-08, 0.405615, 0, -0.995609, -4.35195e-08, -10, 1.2, 10.3 )
+
+[node name="Area" type="Area" parent="branjevka"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="branjevka/Area"]
+transform = Transform( 4, -9.6291e-15, 3.27352e-22, 3.23232e-14, 3.26965, 9.21412e-08, 4.1901e-22, 4.2385e-08, 5, 0, 3.1071, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="impresija" parent="." instance=ExtResource( 28 )]
+transform = Transform( 1.03013e-15, 2.35666e-08, 0.539142, 0.539142, -2.35666e-08, 0, 4.37114e-08, 1, -4.37114e-08, -10, 1.2, 11.2 )
+
+[node name="Area" type="Area" parent="impresija"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="impresija/Area"]
+transform = Transform( 4, 0, 5.0822e-21, 7.10543e-14, 4, 2.84217e-14, -8.47033e-22, -2.84217e-14, 5, 1.43051e-06, 3.85426, 0 )
+shape = SubResource( 32 )
+
+[node name="le moulin" parent="." instance=ExtResource( 29 )]
+transform = Transform( 6.46569e-16, 1.47918e-08, 0.338396, 0.338396, -1.47918e-08, 0, 4.37114e-08, 1, -4.37114e-08, -4, 1.2, 11.2 )
+
+[node name="Area" type="Area" parent="le moulin"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="le moulin/Area"]
+transform = Transform( 4, -2.84217e-14, 3.38813e-21, -2.84217e-14, 4, 8.52651e-14, 0, 0, 5, 4.76837e-07, 3.9754, 0 )
+shape = SubResource( 32 )
+
+[node name="baletna sola" parent="." instance=ExtResource( 30 )]
+transform = Transform( -0.393267, -3.43805e-08, -1.50282e-15, 0, -1.71902e-08, 0.393267, -8.74228e-08, 1, 4.37114e-08, 2, 1.2, 11.2 )
+
+[node name="Area" type="Area" parent="baletna sola"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="baletna sola/Area"]
+transform = Transform( 4, -5.68434e-14, 1.69407e-21, 0, 4, 0, -5.0822e-21, -1.42109e-14, 5, 0, 3.81193, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="14letna plesalka" parent="." instance=ExtResource( 31 )]
+transform = Transform( -0.275735, -4.75865e-08, -1.05412e-15, 0, -2.37933e-08, 0.275847, -4.41865e-08, 0.997774, 2.21022e-08, 8, 1.2, 11.2 )
+
+[node name="Area" type="Area" parent="14letna plesalka"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="14letna plesalka/Area"]
+transform = Transform( 4, -1.7053e-13, 1.69407e-21, 2.84217e-14, 4, 4.26326e-14, -3.38813e-21, -2.84217e-14, 5, 1.90735e-06, 3.92859, 4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="pomlad" parent="." instance=ExtResource( 32 )]
+transform = Transform( 9.11653e-16, 2.08562e-08, 0.477134, 0.477134, -2.08562e-08, 0, 4.37114e-08, 1, -4.37114e-08, 15, 1.2, 11.2 )
+
+[node name="Area" type="Area" parent="pomlad"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="pomlad/Area"]
+transform = Transform( 4, 0, 0, -2.84217e-14, 4, 8.52651e-14, -3.38813e-21, -2.84217e-14, 5, 7.15256e-07, 3.94421, 0 )
+shape = SubResource( 32 )
+
+[node name="sava" parent="." instance=ExtResource( 33 )]
+transform = Transform( 4.37114e-08, -1, -8.74228e-08, -0.662257, -2.89482e-08, 0, -2.53073e-15, 5.78963e-08, -0.662257, 23.2, 1.2, 19.465 )
+
+[node name="Area" type="Area" parent="sava"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="sava/Area"]
+transform = Transform( 4, -2.84217e-14, 8.47033e-22, 0, 2.3, 0, -1.69407e-21, -1.42109e-14, 5, 4.76837e-07, 2.2551, 0 )
+shape = SubResource( 32 )
+
+[node name="Napis Impresionizem" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -10.0391, 2.89729, 11.1751 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Postimpresionizem" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, 15.0858, 3.36564, 28.1145 )
+mesh = SubResource( 10 )
+material/0 = SubResource( 3 )
+
+[node name="zvezdna noc" parent="." instance=ExtResource( 34 )]
+transform = Transform( 6.23752e-16, -1.42698e-08, 0.326455, -0.326455, -1.42698e-08, 0, 4.37114e-08, -1, -4.37114e-08, 15, 1.2, 28.1 )
+
+[node name="Area" type="Area" parent="zvezdna noc"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="zvezdna noc/Area"]
+transform = Transform( 4, 1.42109e-14, 1.69407e-21, -2.84217e-14, 4, 2.84217e-14, -3.38813e-21, -4.26326e-14, 5, 4.76837e-07, 3.98953, 0 )
+shape = SubResource( 32 )
+
+[node name="pere tanguy" parent="." instance=ExtResource( 35 )]
+transform = Transform( 8.60913e-16, -1.96954e-08, 0.450578, -0.450578, -1.96954e-08, 0, 4.37114e-08, -1, -4.37114e-08, 8, 1.2, 28.1 )
+
+[node name="Area" type="Area" parent="pere tanguy"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="pere tanguy/Area"]
+transform = Transform( 4, 0, 1.69407e-21, 0, 4, -5.68434e-14, -6.77626e-21, -2.84217e-14, 5, 2.38419e-07, 3.85361, 0 )
+shape = SubResource( 32 )
+
+[node name="rumeni kristus" parent="." instance=ExtResource( 36 )]
+transform = Transform( 0.374154, 0, 0, 0, -1.63548e-08, 0.374154, 0, -1, -4.37114e-08, 2, 1.2, 28.1 )
+
+[node name="Area" type="Area" parent="rumeni kristus"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="rumeni kristus/Area"]
+transform = Transform( 4, 0, 2.11759e-21, 0, 4, 5.68434e-14, -1.69407e-21, -1.42109e-14, 5, 4.76837e-07, 3.95394, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="arearea" parent="." instance=ExtResource( 37 )]
+transform = Transform( 9.8208e-16, 2.24674e-08, -0.513994, 0.513994, -2.24674e-08, 0, -4.37114e-08, -1, -4.37114e-08, -4, 1.2, 28.1 )
+
+[node name="Area" type="Area" parent="arearea"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="arearea/Area"]
+transform = Transform( 4, -2.84217e-14, 1.69407e-21, 0, 4, 2.84217e-14, -1.69407e-21, -2.84217e-14, 5, 7.15256e-07, 3.62288, 4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="avtoportret" parent="." instance=ExtResource( 38 )]
+transform = Transform( 0.231213, 0, 0, 0, -1.01066e-08, 0.231213, 0, -1, -4.37114e-08, -10, 1.2, 28.1 )
+
+[node name="Area" type="Area" parent="avtoportret"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="avtoportret/Area"]
+transform = Transform( 4, 0, 2.11759e-21, 0, 4, 7.10543e-14, -1.69407e-21, -2.84217e-14, 5, 0, 3.8717, 9.53674e-07 )
+shape = SubResource( 32 )
+
+[node name="Napis Postimpresionizem2" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, -13.204, 3.86274, 28.1145 )
+mesh = SubResource( 13 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Postimpresionizem3" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, -13.3339, 3.48152, 28.1075 )
+mesh = SubResource( 17 )
+material/0 = SubResource( 3 )
+
+[node name="tihozitje" parent="." instance=ExtResource( 39 )]
+transform = Transform( 1.14538e-15, 2.62032e-08, 0.599459, 0.599459, -2.62032e-08, 0, 4.37114e-08, 1, -4.37114e-08, -10, 1.2, 28.9 )
+
+[node name="Area" type="Area" parent="tihozitje"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="tihozitje/Area"]
+transform = Transform( 4, -9.9476e-14, 7.6233e-21, 1.27898e-13, 3.8, 1.42109e-14, -4.23516e-21, -2.84217e-14, 5, 1.43051e-06, 3.74238, 0 )
+shape = SubResource( 32 )
+
+[node name="Napis Ekspresionizem" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -3.87772, 3.82717, 28.9014 )
+mesh = SubResource( 18 )
+material/0 = SubResource( 3 )
+
+[node name="avtoportret z modelom" parent="." instance=ExtResource( 40 )]
+transform = Transform( -0.300517, 2.6272e-08, 0, 1.14839e-15, 1.3136e-08, 0.300517, 8.74228e-08, 1, -4.37114e-08, -4, 1.2, 28.9 )
+
+[node name="Area" type="Area" parent="avtoportret z modelom"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="avtoportret z modelom/Area"]
+transform = Transform( 4, 1.13687e-13, -6.77626e-21, -2.27374e-13, 3.8, 1.42109e-13, 6.77626e-21, -7.10543e-14, 5, 0, 3.69477, -2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="ples okrog zlteleta" parent="." instance=ExtResource( 41 )]
+transform = Transform( 1.0516e-15, -2.40577e-08, -0.550376, -0.550376, -2.40577e-08, 0, -4.37114e-08, 1, -4.37114e-08, 2, 1.2, 28.9 )
+
+[node name="Area" type="Area" parent="ples okrog zlteleta"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 0, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="ples okrog zlteleta/Area"]
+transform = Transform( 4, 0, 5.0822e-21, 0, 3.8, -2.84217e-14, -5.0822e-21, 2.84217e-14, 5, 4.76837e-07, 3.73526, -2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="zelena crta" parent="." instance=ExtResource( 44 )]
+transform = Transform( -0.693229, 6.0604e-08, 2.64908e-15, 0, -3.0302e-08, 0.693229, 8.74228e-08, 1, 4.37114e-08, 8, 1.2, 28.9 )
+
+[node name="Area" type="Area" parent="zelena crta"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="zelena crta/Area"]
+transform = Transform( 2.1, 2.84217e-14, 8.47033e-22, 0, 3.8, -1.42109e-14, 2.5411e-21, 1.42109e-14, 3, 0, 3.74818, 0 )
+shape = SubResource( 32 )
+
+[node name="ples" parent="." instance=ExtResource( 46 )]
+transform = Transform( 1.55785e-15, 3.56396e-08, 0.815338, 0.815338, -3.56396e-08, 0, 4.37114e-08, 1, -4.37114e-08, 15, 1.2, 28.9 )
+
+[node name="Area" type="Area" parent="ples"]
+transform = Transform( 1, -3.55271e-15, 4.23516e-22, 0, 1, 0, 4.23516e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="ples/Area"]
+transform = Transform( 3, 0, 2.96462e-21, 0, 3.8, 1.42109e-14, -8.47033e-22, -1.42109e-14, 3.7, 5.96046e-07, 3.75682, 0 )
+shape = SubResource( 32 )
+
+[node name="stanje duha" parent="." instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, -1, 0, 0.64616, -2.82445e-08, 0, 0, 0, 0.64616, 23.2, 1.2, 37.1345 )
+
+[node name="Area" type="Area" parent="stanje duha"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="stanje duha/Area"]
+transform = Transform( 3.2, -6.01856e-36, 1.94818e-21, 0, 2.3, 2.84218e-14, -1.35526e-21, -1.42109e-14, 4.6, 4.76837e-07, 2.2551, 0 )
+shape = SubResource( 32 )
+
+[node name="pes na vrvici" parent="." instance=ExtResource( 47 )]
+transform = Transform( -0.586383, -5.12632e-08, 0, -2.24079e-15, 2.56316e-08, -0.586383, 8.74228e-08, -1, -4.37114e-08, 15, 1.2, 44.1 )
+
+[node name="Area" type="Area" parent="pes na vrvici"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="pes na vrvici/Area"]
+transform = Transform( 4.3, 0, -1.69407e-21, 0, 3.8, 1.42109e-14, 5.0822e-21, -2.84217e-14, 3.7, 0, 3.55968, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="nadaljevanja v prostoru" parent="." instance=ExtResource( 48 )]
+transform = Transform( 0.508702, 0, 0, 0, -2.22361e-08, 0.508702, 0, -1, -4.37114e-08, 8, 1.2, 44.1 )
+
+[node name="Area" type="Area" parent="nadaljevanja v prostoru"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="nadaljevanja v prostoru/Area"]
+transform = Transform( 3, 1.69407e-21, 1.73642e-21, -6.01853e-36, 3.8, 2.84217e-14, -1.27055e-21, -2.84217e-14, 4.1, 0, 3.65718, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="tihozitje z violino" parent="." instance=ExtResource( 49 )]
+transform = Transform( 0.31102, 0, 0, 0, 0.00110739, 0.311018, 0, -0.999994, 0.00356049, 2, 1.2, 44.1 )
+
+[node name="Area" type="Area" parent="tihozitje z violino"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="tihozitje z violino/Area"]
+transform = Transform( 3, 1.69407e-21, 2.97785e-21, 3.9443e-31, 3.8, 3.72529e-09, -1.27055e-21, -1.86265e-09, 7, 9.53674e-07, 3.74038, -0.00528812 )
+shape = SubResource( 32 )
+
+[node name="avignonske gdc" parent="." instance=ExtResource( 50 )]
+transform = Transform( 0.568187, 0, 0, 0, -2.48362e-08, 0.568187, 0, -1, -4.37114e-08, -4, 1.2, 44.1 )
+
+[node name="Area" type="Area" parent="avignonske gdc"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="avignonske gdc/Area"]
+transform = Transform( 3.5, 0, 1.48231e-21, 0, 3.8, 2.84217e-14, -1.48231e-21, -2.84217e-14, 3.5, 4.76837e-07, 3.69269, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( -0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, -14.5081, -3.74469, 44.5898 )
+mesh = ExtResource( 51 )
+
+[node name="fontana" parent="." instance=ExtResource( 52 )]
+transform = Transform( 1.11348e-15, -2.54734e-08, 0.582762, -0.582762, -2.54734e-08, 0, 4.37114e-08, -1, -4.37114e-08, -10, 1.2, 44.1 )
+
+[node name="Area" type="Area" parent="fontana"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="fontana/Area"]
+transform = Transform( 4, 7.10543e-14, 0, -8.52651e-14, 3.8, 1.27898e-13, 8.47033e-22, -8.52651e-14, 5, 9.53674e-07, 3.689, -2.04722 )
+shape = SubResource( 32 )
+
+[node name="Napis Impresionizem2" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, 7.99657, 3.56697, 28.8777 )
+mesh = SubResource( 33 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Futurizem" type="MeshInstance" parent="."]
+transform = Transform( -1.43301e-07, 0, -2.10094, 0, 3.52088, 0, 3.27835, 0, -9.18349e-08, 23.2, 3.45309, 37.1487 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Kubizem" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, 1.96454, 3.57494, 44.1206 )
+mesh = SubResource( 35 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Dadaizem" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, -9.95913, 3.36564, 44.1414 )
+mesh = SubResource( 36 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Nadrealizem" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -7.34878, 3.46928, 44.8944 )
+mesh = SubResource( 40 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Modernizem" type="MeshInstance" parent="."]
+transform = Transform( 11.1564, 0, 0, 0, 11.9817, 0, 0, 0, 2.10094, -1.38073, 4.8413, 28.9135 )
+mesh = SubResource( 41 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Abstraktna umetnost" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, 2.08045, 3.46928, 44.8944 )
+mesh = SubResource( 42 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Abstraktni ekspresionizem" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, -4.02836, 3.6589, 60.6901 )
+mesh = SubResource( 43 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Sodobna umetnost" type="MeshInstance" parent="."]
+transform = Transform( -3.80244e-07, 9.34249, 1.78389e-07, 0, -2.63167e-07, 2.62995, 8.69897, 4.08373e-07, 7.79763e-15, -13.3681, -1.05921, 68.8201 )
+mesh = SubResource( 44 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Video" type="MeshInstance" parent="."]
+transform = Transform( -1.58462e-07, 0, -1.70073, 0, 3.89336, 0, 3.62518, 0, -7.43413e-08, 23.3147, 9.28353, 69.5197 )
+mesh = SubResource( 45 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Konceptualna umetnost" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -9.96913, 3.46928, 77.5636 )
+mesh = SubResource( 46 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Instalacija" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -4.01599, 3.46928, 77.5636 )
+mesh = SubResource( 47 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Performans" type="MeshInstance" parent="."]
+transform = Transform( -1.58462e-07, 0, -1.70073, 0, 3.89336, 0, 3.62518, 0, -7.43413e-08, 23.3147, 3.56786, 87.4972 )
+mesh = SubResource( 48 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Street Art" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, 2.12931, 3.6589, 96.1545 )
+mesh = SubResource( 49 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Fotografija" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, -3.94413, 3.6589, 96.1545 )
+mesh = SubResource( 50 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Fotomontaža" type="MeshInstance" parent="."]
+transform = Transform( -3.62518, 0, -1.48683e-07, 0, 3.89336, 0, 3.16923e-07, 0, -1.70073, -10.1128, 3.6589, 96.1545 )
+mesh = SubResource( 51 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Objekti" type="MeshInstance" parent="."]
+transform = Transform( 3.27835, 0, 0, 0, 3.52088, 0, 0, 0, 2.10094, -9.96913, 3.46928, 96.9191 )
+mesh = SubResource( 52 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Pollock" type="MeshInstance" parent="."]
+transform = Transform( -1.58462e-07, 0, -1.70073, 0, 3.89336, 0, 3.62518, 0, -7.43413e-08, 23.3147, 3.56786, 105.535 )
+mesh = SubResource( 58 )
+material/0 = SubResource( 3 )
+
+[node name="Napis Pollock2" type="MeshInstance" parent="."]
+transform = Transform( -1.58462e-07, 0, -1.70073, 0, 3.89336, 0, 3.62518, 0, -7.43413e-08, 23.3147, 2.86036, 105.535 )
+mesh = SubResource( 61 )
+material/0 = SubResource( 3 )
+
+[node name="vztrajnost spomina" parent="." instance=ExtResource( 53 )]
+transform = Transform( 5.95739e-16, -1.36289e-08, -0.311793, -0.311793, -1.36289e-08, 0, -4.37114e-08, 1, -4.37114e-08, -10, 1.2, 45 )
+
+[node name="Area" type="Area" parent="vztrajnost spomina"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="vztrajnost spomina/Area"]
+transform = Transform( 6, 1.42109e-14, 3.38813e-21, 0, 3.8, 2.84217e-14, -2.5411e-21, -1.42109e-14, 8, 4.76837e-07, 3.62068, 0 )
+shape = SubResource( 32 )
+
+[node name="uganka pozelenja" parent="." instance=ExtResource( 54 )]
+transform = Transform( 7.8815e-16, 1.80308e-08, 0.412496, 0.412496, -1.80308e-08, 0, 4.37114e-08, 1, -4.37114e-08, -4, 1.2, 45 )
+
+[node name="Area" type="Area" parent="uganka pozelenja"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="uganka pozelenja/Area"]
+transform = Transform( 4.5, 2.84217e-14, 8.47033e-22, -2.84217e-14, 3.8, 2.84217e-14, -4.23516e-21, -4.26326e-14, 6, 4.76837e-07, 3.45641, 0 )
+shape = SubResource( 32 )
+
+[node name="abstrahiranje drevesa" parent="." instance=ExtResource( 55 )]
+transform = Transform( 8.7675e-16, -2.00577e-08, -0.458866, -0.458866, -2.00577e-08, 0, -4.37114e-08, 1, -4.37114e-08, 2, 1.2, 45 )
+
+[node name="Area" type="Area" parent="abstrahiranje drevesa"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="abstrahiranje drevesa/Area"]
+transform = Transform( 4.6, -4.26326e-14, 2.96462e-21, -1.42109e-14, 3.8, 1.42109e-14, -5.0822e-21, -2.84217e-14, 3.7, 2.38419e-07, 3.58369, 4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="broadway boogie woogie" parent="." instance=ExtResource( 56 )]
+transform = Transform( -0.683403, 5.9745e-08, 0, 2.61154e-15, 2.98725e-08, 0.683403, 8.74228e-08, 1, -4.37114e-08, 8, 1.2, 45 )
+
+[node name="Area" type="Area" parent="broadway boogie woogie"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="broadway boogie woogie/Area"]
+transform = Transform( 3, 5.68434e-14, -2.5411e-21, 0, 3.8, 1.42109e-14, -3.38813e-21, -4.26326e-14, 3, 0, 3.55809, 0 )
+shape = SubResource( 32 )
+
+[node name="kompozicija modra" parent="." instance=ExtResource( 57 )]
+transform = Transform( 1.30675e-15, -2.9895e-08, -0.683917, -0.683917, -2.9895e-08, 0, -4.37114e-08, 1, -4.37114e-08, 15, 1.2, 45 )
+
+[node name="Area" type="Area" parent="kompozicija modra"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="kompozicija modra/Area"]
+transform = Transform( 3, -1.42109e-14, 1.27055e-21, -1.42109e-14, 3.8, 1.42109e-14, 0, -4.26326e-14, 2.8, 5.96046e-07, 3.59389, 0 )
+shape = SubResource( 32 )
+
+[node name="belo na belem" parent="." instance=ExtResource( 58 )]
+transform = Transform( 4.37114e-08, -1, 8.74228e-08, -0.392654, -1.71634e-08, 0, 1.50048e-15, -3.43269e-08, -0.392654, 23.2907, 1.2, 55.7986 )
+
+[node name="belo na belem slika" parent="." instance=ExtResource( 59 )]
+transform = Transform( -4.37114e-08, -1, 0, 0.538803, -2.35518e-08, 0, 0, 0, 0.538803, 23.3, 1.2, 50.68 )
+
+[node name="Area" type="Area" parent="belo na belem slika"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="belo na belem slika/Area"]
+transform = Transform( 4, 1.27895e-36, 4.23517e-21, 0, 2.3, 6.17865e-14, -1.69407e-21, -1.42109e-14, 10, 4.76837e-07, 2.2551, 4.48521 )
+shape = SubResource( 32 )
+
+[node name="kompozicija 4" parent="." instance=ExtResource( 60 )]
+transform = Transform( 1.3688e-15, 3.13145e-08, -0.716393, 0.716393, -3.13145e-08, 0, -4.37114e-08, -1, -4.37114e-08, 15, 1.2, 60.7 )
+
+[node name="Area" type="Area" parent="kompozicija 4"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="kompozicija 4/Area"]
+transform = Transform( 2.7, -2.84217e-14, 2.5411e-21, 1.42109e-14, 3.8, 5.68434e-14, -1.27055e-21, -2.84217e-14, 4.5, 4.76837e-07, 3.69879, 0 )
+shape = SubResource( 32 )
+
+[node name="s tremi jezdeci" parent="." instance=ExtResource( 61 )]
+transform = Transform( 1.08111e-15, 2.4733e-08, -0.565825, 0.565825, -2.4733e-08, 0, -4.37114e-08, -1, -4.37114e-08, 8, 1.2, 60.7 )
+
+[node name="Area" type="Area" parent="s tremi jezdeci"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="s tremi jezdeci/Area"]
+transform = Transform( 3.7, 1.42109e-14, 1.69407e-21, -2.84217e-14, 3.8, 2.84217e-14, -1.27055e-21, -1.42109e-14, 5, 9.53674e-07, 3.71042, 0 )
+shape = SubResource( 32 )
+
+[node name="jesenski ritmi" parent="." instance=ExtResource( 62 )]
+transform = Transform( 1.72429e-15, -3.94471e-08, 0.902444, -0.902444, -3.94471e-08, 0, 4.37114e-08, -1, -4.37114e-08, -4, 1.2, 60.7 )
+
+[node name="Area" type="Area" parent="jesenski ritmi"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="jesenski ritmi/Area"]
+transform = Transform( 2.3, -2.84217e-14, 0, 0, 3.8, 2.84217e-14, -1.69407e-21, 1.42109e-14, 5, 3.57628e-07, 3.71298, 9.53674e-07 )
+shape = SubResource( 32 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 640, 360 )
+render_target_v_flip = true
+
+[node name="ViewportContainer" type="ViewportContainer" parent="Viewport"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="VideoPlayer" type="VideoPlayer" parent="Viewport/ViewportContainer"]
+margin_right = 640.0
+margin_bottom = 360.0
+stream = ExtResource( 63 )
+volume_db = -80.0
+autoplay = true
+script = ExtResource( 64 )
+
+[node name="Video - The Clock" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, -1, 3.82137e-15, 1.63184e-07, 7.13302e-15, -3.73323, 6.12593, 8.03319e-07, 2.67773e-07, 23.2744, 4.60468, 69.388 )
+mesh = SubResource( 39 )
+
+[node name="Area" type="Area" parent="Video - The Clock"]
+transform = Transform( 0.384246, -9.53257e-07, -2.69155e-08, -9.53255e-07, 7.65357, -2.89553e-14, -2.69154e-08, -2.54024e-14, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Video - The Clock/Area"]
+transform = Transform( 3.17796, 1.36505e-07, 6.7313e-08, 1.24635e-07, 2.43966, 2.77924e-14, 4.71189e-08, -8.47344e-15, 3, 0, 2.54299, 0 )
+shape = SubResource( 32 )
+
+[node name="stol" parent="." instance=ExtResource( 65 )]
+transform = Transform( 1.16897e-15, 2.67429e-08, 0.611806, 0.611806, -2.67429e-08, 0, 4.37114e-08, 1, -4.37114e-08, -10, 1.2, 77.7 )
+
+[node name="Area" type="Area" parent="stol"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="stol/Area"]
+transform = Transform( 3.2, 0, 4.23516e-21, -2.84217e-14, 4, 5.68434e-14, -1.27055e-21, -2.84217e-14, 4.3, 8.34465e-07, 3.89946, 0 )
+shape = SubResource( 32 )
+
+[node name="obliteration room" parent="." instance=ExtResource( 67 )]
+transform = Transform( 9.58092e-16, 2.19186e-08, 0.501439, 0.501439, -2.19186e-08, 0, 4.37114e-08, 1, -4.37114e-08, -4, 1.2, 77.7 )
+
+[node name="Area" type="Area" parent="obliteration room"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="obliteration room/Area"]
+transform = Transform( 3, 0, 2.5411e-21, 0, 4, 4.26326e-14, -2.11758e-21, -2.84217e-14, 5, 7.15256e-07, 3.85712, 0 )
+shape = SubResource( 32 )
+
+[node name="polka dot" parent="." instance=ExtResource( 66 )]
+transform = Transform( 1.03667e-15, 2.37163e-08, 0.542565, 0.542565, -2.37163e-08, 0, 4.37114e-08, 1, -4.37114e-08, 2, 1.2, 77.7 )
+
+[node name="Area" type="Area" parent="polka dot"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="polka dot/Area"]
+transform = Transform( 3.5, 0, 1.69407e-21, 0, 4, 0, -1.69407e-21, -2.84217e-14, 5, 7.15256e-07, 3.86511, -2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="nepospravljiva postelja" parent="." instance=ExtResource( 69 )]
+transform = Transform( -0.480603, -4.20157e-08, -1.83656e-15, 0, -2.10078e-08, 0.480603, -8.74228e-08, 1, 4.37114e-08, 8, 1.2, 77.7 )
+
+[node name="Area" type="Area" parent="nepospravljiva postelja"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="nepospravljiva postelja/Area"]
+transform = Transform( 6, 0, 0, 1.13687e-13, 4, 0, 1.69407e-21, -2.84217e-14, 4, 1.90735e-06, 3.74374, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="kapital" parent="." instance=ExtResource( 68 )]
+transform = Transform( 9.07862e-16, 2.07695e-08, 0.47515, 0.47515, -2.07695e-08, 0, 4.37114e-08, 1, -4.37114e-08, 15, 1.2, 77.7 )
+
+[node name="Area" type="Area" parent="kapital"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="kapital/Area"]
+transform = Transform( 4.2, 0, 8.47033e-22, -5.68434e-14, 4, 8.52651e-14, -1.69407e-21, -2.84217e-14, 6.2, 7.15256e-07, 3.84128, 0 )
+shape = SubResource( 32 )
+
+[node name="mrtvi zajec" parent="." instance=ExtResource( 71 )]
+transform = Transform( -4.37114e-08, -1, 0, 0.464341, -2.0297e-08, 0, 0, 0, 0.464341, 23.3, 1.2, 87.4684 )
+
+[node name="Area" type="Area" parent="mrtvi zajec"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="mrtvi zajec/Area"]
+transform = Transform( 5, -6.01856e-36, 2.11759e-21, 0, 2.3, 3.08933e-14, -2.11759e-21, -1.42109e-14, 5, 4.76837e-07, 2.2551, 0 )
+shape = SubResource( 32 )
+
+[node name="hoja po kitajskem zidu" parent="." instance=ExtResource( 70 )]
+transform = Transform( 1.17057e-15, 2.67795e-08, -0.612644, 0.612644, -2.67795e-08, 0, -4.37114e-08, -1, -4.37114e-08, 15, 1.2, 96.1 )
+
+[node name="Area" type="Area" parent="hoja po kitajskem zidu"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="hoja po kitajskem zidu/Area"]
+transform = Transform( 3.2, -2.84217e-14, 3.38813e-21, -1.42109e-14, 4, 2.84217e-14, -2.11758e-21, -2.84217e-14, 5, 5.96046e-07, 3.86865, 0 )
+shape = SubResource( 32 )
+
+[node name="crni kvadrat na rdecem trgu" parent="." instance=ExtResource( 72 )]
+transform = Transform( 1.06763e-15, 2.44245e-08, -0.558768, 0.558768, -2.44245e-08, 0, -4.37114e-08, -1, -4.37114e-08, 8, 1.2, 96.1 )
+
+[node name="Area" type="Area" parent="crni kvadrat na rdecem trgu"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="crni kvadrat na rdecem trgu/Area"]
+transform = Transform( 3.3, 2.84217e-14, 3.38813e-21, 0, 4, 2.84217e-14, -1.69407e-21, 0, 4, 9.53674e-07, 3.96919, 0 )
+shape = SubResource( 32 )
+
+[node name="follow your dreams" parent="." instance=ExtResource( 74 )]
+transform = Transform( 1.16225e-15, 2.65891e-08, -0.608288, 0.608288, -2.65891e-08, 0, -4.37114e-08, -1, -4.37114e-08, 2, 1.2, 96.1 )
+
+[node name="Area" type="Area" parent="follow your dreams"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="follow your dreams/Area"]
+transform = Transform( 3.2, 0, 0, 2.84217e-14, 4, 5.68434e-14, -4.23516e-22, 0, 4.7, 4.76837e-07, 3.87447, 2.38419e-07 )
+shape = SubResource( 32 )
+
+[node name="brez naslova" parent="." instance=ExtResource( 73 )]
+transform = Transform( 1.30594e-15, 2.98764e-08, -0.683493, 0.683493, -2.98764e-08, 0, -4.37114e-08, -1, -4.37114e-08, -4, 1.2, 96.1 )
+
+[node name="Area" type="Area" parent="brez naslova"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="brez naslova/Area"]
+transform = Transform( 3, 0, 2.5411e-21, 0, 4, 2.84217e-14, -1.69407e-21, -1.42109e-14, 3.5, 4.76837e-07, 3.87089, 4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="i shop therefore i am" parent="." instance=ExtResource( 75 )]
+transform = Transform( 1.02008e-15, 2.33368e-08, -0.533884, 0.533884, -2.33368e-08, 0, -4.37114e-08, -1, -4.37114e-08, -10, 1.2, 96.1 )
+
+[node name="Area" type="Area" parent="i shop therefore i am"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="i shop therefore i am/Area"]
+transform = Transform( 3.7, 0, 1.27055e-21, -1.42109e-14, 4, 1.42109e-14, -2.5411e-21, -5.68434e-14, 3.7, 7.15256e-07, 3.85511, 0 )
+shape = SubResource( 32 )
+
+[node name="kraljestvo oceta" parent="." instance=ExtResource( 76 )]
+transform = Transform( 1.175e-15, 2.68809e-08, 0.614962, 0.614962, -2.68809e-08, 0, 4.37114e-08, 1, -4.37114e-08, -10, 1.2, 97 )
+
+[node name="Area" type="Area" parent="kraljestvo oceta"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="kraljestvo oceta/Area"]
+transform = Transform( 3.3, -1.42109e-14, 1.69407e-21, -2.84217e-14, 4, 0, -4.23516e-22, 2.84217e-14, 5.7, 5.96046e-07, 3.77834, 0 )
+shape = SubResource( 32 )
+
+[node name="jackson in bubbles" parent="." instance=ExtResource( 77 )]
+transform = Transform( 1.67222e-15, 3.82558e-08, 0.875191, 0.875191, -3.82558e-08, 0, 4.37114e-08, 1, -4.37114e-08, 2, 1.2, 97 )
+
+[node name="Area" type="Area" parent="jackson in bubbles"]
+transform = Transform( 1, -3.55271e-15, 2.11758e-22, 0, 1, 0, 2.11758e-22, 3.55271e-15, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="jackson in bubbles/Area"]
+transform = Transform( 3, 0, 6.77626e-21, 0, 4, 2.84217e-14, -1.27055e-21, -2.84217e-14, 5, 5.96046e-07, 3.89899, 4.76837e-07 )
+shape = SubResource( 32 )
+
+[node name="Viewport2" type="Viewport" parent="."]
+size = Vector2( 500, 500 )
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Viewport2"]
+margin_right = 500.0
+margin_bottom = 500.0
+script = ExtResource( 78 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8362, -0.705117, 105.687 )
+mesh = SubResource( 55 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.836, -0.96704, 105.687 )
+mesh = SubResource( 57 )
+
+[connection signal="body_entered" from="Apostoli_in_Donator/Area" to="RichTextLabel" method="apostoli_in_donator"]
+[connection signal="body_exited" from="Apostoli_in_Donator/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="Giovanni_Arnolfini_s_soprogo/Area" to="RichTextLabel" method="giovanni_arnolfini_s_soprogo"]
+[connection signal="body_exited" from="Giovanni_Arnolfini_s_soprogo/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="Assunta/Area" to="RichTextLabel" method="assunta"]
+[connection signal="body_exited" from="Assunta/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="Madona_v_zelenju/Area" to="RichTextLabel" method="madona_v_zelenju"]
+[connection signal="body_exited" from="Madona_v_zelenju/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="Ugrabitev Evrope/Area" to="RichTextLabel" method="ugrabitev_evrope"]
+[connection signal="body_exited" from="Ugrabitev Evrope/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="strahote vojne/Area" to="RichTextLabel" method="strahote_vojne"]
+[connection signal="body_exited" from="strahote vojne/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="predaja brede/Area" to="RichTextLabel" method="predaja_brede"]
+[connection signal="body_exited" from="predaja brede/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="salomonova sodba/Area" to="RichTextLabel" method="salomonova_sodba"]
+[connection signal="body_exited" from="salomonova sodba/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="prisega horacijev/Area" to="RichTextLabel" method="prisega_horacijev"]
+[connection signal="body_exited" from="prisega horacijev/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="napoleon/Area" to="RichTextLabel" method="napoleon_na_prelazu_sv_bernarda"]
+[connection signal="body_exited" from="napoleon/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="amor in psihe/Area" to="RichTextLabel" method="amor_in_psihe"]
+[connection signal="body_exited" from="amor in psihe/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="splav meduze/Area" to="RichTextLabel" method="splav_meduze"]
+[connection signal="body_exited" from="splav meduze/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="svoboda vodi ljudstvo/Area" to="RichTextLabel" method="svoboda_vodi_ljudstvo"]
+[connection signal="body_exited" from="svoboda vodi ljudstvo/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="sardanapalova smrt/Area" to="RichTextLabel" method="sardanapalova_smrt"]
+[connection signal="body_exited" from="sardanapalova smrt/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="alzirke/Area" to="RichTextLabel" method="alzirke"]
+[connection signal="body_exited" from="alzirke/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="klansko jezero/Area" to="RichTextLabel" method="klansko_jezero_v_nevihti"]
+[connection signal="body_exited" from="klansko jezero/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="pogreb v ornansu/Area" to="RichTextLabel" method="pogreb_v_ornansu"]
+[connection signal="body_exited" from="pogreb v ornansu/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="umetnikov atelje/Area" to="RichTextLabel" method="umetnikov_atelje"]
+[connection signal="body_exited" from="umetnikov atelje/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="zene klase/Area" to="RichTextLabel" method="zene_ki_pobirajo_klase"]
+[connection signal="body_exited" from="zene klase/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="doma/Area" to="RichTextLabel" method="doma"]
+[connection signal="body_exited" from="doma/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="pred lovom/Area" to="RichTextLabel" method="pred_lovom"]
+[connection signal="body_exited" from="pred lovom/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="branjevka/Area" to="RichTextLabel" method="pariska_branjevka"]
+[connection signal="body_exited" from="branjevka/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="impresija/Area" to="RichTextLabel" method="impresija_soncni_vzhod"]
+[connection signal="body_exited" from="impresija/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="le moulin/Area" to="RichTextLabel" method="le_moulin_de_la_galette"]
+[connection signal="body_exited" from="le moulin/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="baletna sola/Area" to="RichTextLabel" method="baletna_sola"]
+[connection signal="body_exited" from="baletna sola/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="14letna plesalka/Area" to="RichTextLabel" method="mala_stirinajstletna_plesalka"]
+[connection signal="body_exited" from="14letna plesalka/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="pomlad/Area" to="RichTextLabel" method="pomlad"]
+[connection signal="body_exited" from="pomlad/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="sava/Area" to="RichTextLabel" method="sava"]
+[connection signal="body_exited" from="sava/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="zvezdna noc/Area" to="RichTextLabel" method="zvezdna_noc"]
+[connection signal="body_exited" from="zvezdna noc/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="pere tanguy/Area" to="RichTextLabel" method="pere_tanguy"]
+[connection signal="body_exited" from="pere tanguy/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="rumeni kristus/Area" to="RichTextLabel" method="rumeni_kristus"]
+[connection signal="body_exited" from="rumeni kristus/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="arearea/Area" to="RichTextLabel" method="rdeci_pes"]
+[connection signal="body_exited" from="arearea/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="avtoportret/Area" to="RichTextLabel" method="avtoportret"]
+[connection signal="body_exited" from="avtoportret/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="tihozitje/Area" to="RichTextLabel" method="tihozitje_s_kosaro_jabolk"]
+[connection signal="body_exited" from="tihozitje/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="avtoportret z modelom/Area" to="RichTextLabel" method="avtoportret_z_modelom"]
+[connection signal="body_exited" from="avtoportret z modelom/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="ples okrog zlteleta/Area" to="RichTextLabel" method="ples_okrog_zlatega_teleta"]
+[connection signal="body_exited" from="ples okrog zlteleta/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="zelena crta/Area" to="RichTextLabel" method="zelena_crta_portret_gospe_matisse"]
+[connection signal="body_exited" from="zelena crta/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="ples/Area" to="RichTextLabel" method="ples"]
+[connection signal="body_exited" from="ples/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="stanje duha/Area" to="RichTextLabel" method="stanje_duha_slovo"]
+[connection signal="body_exited" from="stanje duha/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="pes na vrvici/Area" to="RichTextLabel" method="pes_na_vrvici"]
+[connection signal="body_exited" from="pes na vrvici/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="nadaljevanja v prostoru/Area" to="RichTextLabel" method="edinstvene_oblike_nadaljevanja_v_prostoru"]
+[connection signal="body_exited" from="nadaljevanja v prostoru/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="tihozitje z violino/Area" to="RichTextLabel" method="tihozitje_z_violino_in_vrcem"]
+[connection signal="body_exited" from="tihozitje z violino/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="avignonske gdc/Area" to="RichTextLabel" method="avignonske_gospodicne"]
+[connection signal="body_exited" from="avignonske gdc/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="fontana/Area" to="RichTextLabel" method="fontana"]
+[connection signal="body_exited" from="fontana/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="vztrajnost spomina/Area" to="RichTextLabel" method="vztrajnost_spomina"]
+[connection signal="body_exited" from="vztrajnost spomina/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="uganka pozelenja/Area" to="RichTextLabel" method="uganka_pozelenja_moja_mama_moja_mama_moja_mama"]
+[connection signal="body_exited" from="uganka pozelenja/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="abstrahiranje drevesa/Area" to="RichTextLabel" method="abstrahiranje_drevesa"]
+[connection signal="body_exited" from="abstrahiranje drevesa/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="broadway boogie woogie/Area" to="RichTextLabel" method="broadway_boogie_woogie"]
+[connection signal="body_exited" from="broadway boogie woogie/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="kompozicija modra/Area" to="RichTextLabel" method="kompozicija_z_rdeco_rumeno_in_modro"]
+[connection signal="body_exited" from="kompozicija modra/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="belo na belem slika/Area" to="RichTextLabel" method="suprematisticna_kompozicija_belo_na_belem"]
+[connection signal="body_exited" from="belo na belem slika/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="kompozicija 4/Area" to="RichTextLabel" method="kompozicija_4"]
+[connection signal="body_exited" from="kompozicija 4/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="s tremi jezdeci/Area" to="RichTextLabel" method="s_tremi_jezdeci"]
+[connection signal="body_exited" from="s tremi jezdeci/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="jesenski ritmi/Area" to="RichTextLabel" method="jesenski_ritmi"]
+[connection signal="body_exited" from="jesenski ritmi/Area" to="RichTextLabel" method="exit"]
+[connection signal="finished" from="Viewport/ViewportContainer/VideoPlayer" to="Viewport/ViewportContainer/VideoPlayer" method="onEnd"]
+[connection signal="body_entered" from="Video - The Clock/Area" to="RichTextLabel" method="the_clock"]
+[connection signal="body_exited" from="Video - The Clock/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="stol/Area" to="RichTextLabel" method="stol"]
+[connection signal="body_exited" from="stol/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="obliteration room/Area" to="RichTextLabel" method="obliteration_room"]
+[connection signal="body_exited" from="obliteration room/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="polka dot/Area" to="RichTextLabel" method="polka_dot"]
+[connection signal="body_exited" from="polka dot/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="nepospravljiva postelja/Area" to="RichTextLabel" method="nepospravljiva_postelja"]
+[connection signal="body_exited" from="nepospravljiva postelja/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="kapital/Area" to="RichTextLabel" method="kapital"]
+[connection signal="body_exited" from="kapital/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="mrtvi zajec/Area" to="RichTextLabel" method="kako_razloziti_umetnost_mrtvemu_zajcu"]
+[connection signal="body_exited" from="mrtvi zajec/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="hoja po kitajskem zidu/Area" to="RichTextLabel" method="hoja_po_kitajskem_zidu"]
+[connection signal="body_exited" from="hoja po kitajskem zidu/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="crni kvadrat na rdecem trgu/Area" to="RichTextLabel" method="crni_kvadrat_na_rdecem_trgu"]
+[connection signal="body_exited" from="crni kvadrat na rdecem trgu/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="follow your dreams/Area" to="RichTextLabel" method="follow_your_dreams"]
+[connection signal="body_exited" from="follow your dreams/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="brez naslova/Area" to="RichTextLabel" method="brez_naslova"]
+[connection signal="body_exited" from="brez naslova/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="i shop therefore i am/Area" to="RichTextLabel" method="i_shop_therefore_i_am"]
+[connection signal="body_exited" from="i shop therefore i am/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="kraljestvo oceta/Area" to="RichTextLabel" method="kraljestvo_oceta"]
+[connection signal="body_exited" from="kraljestvo oceta/Area" to="RichTextLabel" method="exit"]
+[connection signal="body_entered" from="jackson in bubbles/Area" to="RichTextLabel" method="michael_jackson_and_bubbles"]
+[connection signal="body_exited" from="jackson in bubbles/Area" to="RichTextLabel" method="exit"]
